@@ -1,0 +1,95 @@
+Bedingung ist1Ziegel
+  schnell
+  wenn istZiegel
+  dann
+    aufheben
+    wenn istZiegel
+    dann
+      hinlegen
+      falsch
+    sonst
+      hinlegen
+      wahr
+    *wenn
+  sonst
+    falsch
+  *wenn
+  langsam
+*Bedingung
+
+Bedingung sind2Ziegel
+  schnell
+  wenn istZiegel
+  dann
+    aufheben
+    wenn istZiegel
+    dann
+      aufheben
+      wenn istZiegel
+      dann
+        falsch
+      sonst
+        wahr
+      *wenn
+      hinlegen(2)
+    sonst
+      hinlegen
+      falsch
+    *wenn
+  sonst
+    falsch
+  *wenn
+  langsam
+*Bedingung
+
+Bedingung sind3Ziegel
+  schnell
+  wenn istZiegel
+  dann
+    aufheben
+    wenn istZiegel
+    dann
+      aufheben
+      wenn istZiegel
+      dann
+        aufheben
+        wenn istZiegel
+        dann
+          falsch
+        sonst
+          wahr
+        *wenn
+        hinlegen(3)
+      sonst
+        hinlegen(2)
+        falsch
+      *wenn
+    sonst
+      hinlegen
+      falsch
+    *wenn
+  sonst
+    falsch
+  *wenn
+  langsam
+*Bedingung
+
+wiederhole solange nichtistMarke
+  wenn ist1Ziegel
+  dann
+    Schritt
+  sonst
+    wenn sind2Ziegel
+    dann
+      schritt
+      rechtsdrehen
+    sonst
+      wenn sind3Ziegel
+      dann
+        schritt
+        linksdrehen
+      *wenn
+    *wenn
+  *wenn
+*wiederhole
+
